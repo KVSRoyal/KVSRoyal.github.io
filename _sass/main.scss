@@ -1,0 +1,40 @@
+body  {
+  background-color: #4794ff;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Optima, sans-serif;
+  font-size: x-large;
+}
+
+p  {
+  font-family: Perpetua, serif;
+  font-size: x-large;
+}
+
+nav  {
+  padding: 20px;
+}
+
+.active {
+  text-decoration: underline;
+  color: white;
+}
+
+.inactive  {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover  {
+  color: #2708c4;
+}
+
+.main  {
+  background-color: #f8fce6;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 10px 10px 10px #345beb;
+}

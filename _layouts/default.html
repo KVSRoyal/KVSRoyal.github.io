@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} - Koriann South</title>
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="icon" type="image/png" href="/assets/imgs/favicon.png">
+  </head>
+  <body>
+	{% include navigation.html %}
+	<div class="main">
+		{{ page.content | markdownify }}
+	</div>	
+  </body>
+</html>
