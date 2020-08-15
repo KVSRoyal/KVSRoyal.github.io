@@ -1,40 +1,63 @@
 body  {
-  background-color: #4794ff;
-  padding-left: 20%;
-  padding-right: 20%;
+  background-color: $background;
+  padding-left: $laptop-content-padding;
+  padding-right: $laptop-content-padding;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Optima, sans-serif;
-  font-size: x-large;
+  font-size: 20px;
 }
 
 p  {
   font-family: Perpetua, serif;
-  font-size: x-large;
+  font-size: 12px;
 }
 
+/* For the navigation bar */
 nav  {
-  padding: 20px;
+  padding-top: $small-padding-percent;
+  padding-bottom: $small-padding-percent;
+  padding-left: $small-padding-percent;
+  padding-right: $small-padding-percent;
+  
+  h1, a {
+	display: inline-block;
+	color: white;
+  }
+  
+  .active {
+	text-decoration: underline;
+  }
+
+  .inactive  {
+    text-decoration: none;
+  }
+
+  .nav-item {
+	display: table-cell;
+	padding-left: $small-padding-pixel;
+	padding-right: $small-padding-pixel + 3px;
+  }
+
+  .nav-item:hover  {
+    color: darken($background, 50%);
+  }
+  
+  #nav-links {
+	float:right;
+  }
+  
+  /* Gone by default */
+  #hamburger  {
+	display: none;
+  }
 }
 
-.active {
-  text-decoration: underline;
-  color: white;
-}
-
-.inactive  {
-  text-decoration: none;
-  color: white;
-}
-
-.nav-item:hover  {
-  color: #2708c4;
-}
-
+/* For main text */
 .main  {
-  background-color: #f8fce6;
+  background-color: white;
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 10px 10px 10px #345beb;
+  box-shadow: 10px 10px 10px darken($background, 10%);
 }

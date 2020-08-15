@@ -1,21 +1,24 @@
-<nav style="padding-bottom: 10%;">
-	<ul style="list-style-type:none;">
-		<li style="float:left;" class="inactive">
-			<h1>Koriann South</h1>
-		</li>
-	{% for item in site.data.navigation %}
-		<li style="float:right; padding-left:20px; padding-right:20px;">
-			<div>
-				<a href="{{ item.link }}"
-					{% if page.url == item.link %}
-						class="nav-item active"
-					{% else %}
-						class="nav-item inactive"
-					{% endif %}>
-					<h2>{{ item.name }}</h2>
-				</a>
-			</div>
-		</li>
-	{% endfor %}
-	</ul>
+<nav>
+	<h1>Koriann South</h1>
+	
+	<!-- Hamburger -->
+	
+	<svg id="hamburger" class="closed" data-name="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.29 35.51"><title>hamburger</title><rect class="cls-1" x="1.29" y="1" width="40" height="6" rx="2.26"/><rect class="cls-1" x="1" y="14.75" width="40" height="6" rx="2.26"/><rect class="cls-1" x="1" y="28.51" width="40" height="6" rx="2.26"/></svg>
+	<script>
+		document.getElementById("hamburger").addEventListener("click", hamburgerClicked);
+    </script>
+	
+	<!-- Navigation links -->
+	<div id="nav-links" class="closed">
+		{% for item in site.data.navigation %}
+			<a href="{{ item.link }}"
+				{% if page.url == item.link %}
+					class="nav-item active"
+				{% else %}
+					class="nav-item inactive"
+				{% endif %}>
+				<h2>{{ item.name }}</h2>
+			</a>
+		{% endfor %}
+	</div>
 </nav>

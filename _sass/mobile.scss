@@ -1,0 +1,63 @@
+/* Mobile overrides */
+@media screen and (max-width: 800px) {
+  body {
+	padding-left: $mobile-content-padding;
+	padding-right: $mobile-content-padding;
+  }
+  
+  nav  {
+    padding: $small-padding-percent;
+ }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+	padding-bottom: 0px;
+  
+    .nav-item {
+	  display: block;
+      color: $background;
+	  text-align: center;
+	}
+  
+    #nav-links.closed{
+	  display: none;
+	}
+	
+	#nav-links.open {
+	  position: absolute;
+      right: $mobile-content-padding + $small-padding-percent - 1%;
+	  display: block;
+	  background-color: white;
+	  width: 150px;
+	  margin-top: -15px;
+	  border-style: solid;
+	  border-width: 2px;
+	  border-color: darken($background, 10%);
+	  border-radius: 10px;
+	  box-shadow: 10px 10px 10px darken($background, 10%);
+	}
+	
+	#hamburger {
+	  display: block;
+      float: right;
+	  width: $small-padding-pixel;
+	  height: $small-padding-pixel;
+	  stroke-miterlimit: 10;
+	  stroke-width: 2px;
+      background-size: cover; 
+	  background-position: center center;
+	  padding-top: $small-padding-pixel;
+	
+	  &.closed {
+	    fill: white;
+	    stroke: white;
+	  }
+	  
+	  &.open {
+	    fill: darken($background, 50%);
+	    stroke: darken($background, 50%);
+	  }
+	}
+  }
+}
