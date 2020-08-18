@@ -6,28 +6,49 @@ body  {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Optima, sans-serif;
-  font-size: 20px;
+  margin-top: 21px;
+  margin-bottom: 21px;
 }
 
 p  {
-  font-family: Perpetua, serif;
+  font-family: Baskerville, serif;
   font-size: 18px;
+}
+
+icon {
+  font-family: 'My Icons';
+}
+
+icon[name="break"]:before {
+  color: $background;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  content: "🙤 · ┈┈┈┈┈┈ · ꕥ · ┈┈┈┈┈┈ · 🙦";
 }
 
 /* For the navigation bar */
 nav  {
+  font-size: 16px;
   padding-top: $small-padding-percent;
   padding-bottom: $small-padding-percent;
   padding-left: $small-padding-percent;
   padding-right: $small-padding-percent;
   
-  h1, a {
-	display: inline-block;
-	color: white;
+  h1 {
+    display: inline-block;
+    color: white;
+  }
+  
+  a {
+	  display: inline-block;
+	  color: white;
   }
   
   .active {
-	text-decoration: underline;
+	  text-decoration: underline;
   }
 
   .inactive  {
@@ -35,9 +56,9 @@ nav  {
   }
 
   .nav-item {
-	display: table-cell;
-	padding-left: $small-padding-pixel;
-	padding-right: $small-padding-pixel + 3px;
+	  display: table-cell;
+	  padding-left: $small-padding-pixel;
+	  padding-right: $small-padding-pixel + 3px;
   }
 
   .nav-item:hover  {
@@ -45,12 +66,12 @@ nav  {
   }
   
   #nav-links {
-	float:right;
+	  float:right;
   }
   
   /* Gone by default */
   #hamburger  {
-	display: none;
+	  display: none;
   }
 }
 
@@ -60,4 +81,42 @@ nav  {
   border-radius: 20px;
   padding: 30px;
   box-shadow: 10px 10px 10px darken($background, 10%);
+
+  h1, h2, h3, h4, h5, h6 {
+    display: block;
+    color: $background;
+  }
+
+  h5, h6 {
+    font-family: Baskerville, serif;
+    font-weight: normal;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
 }

@@ -1,5 +1,5 @@
 /* Mobile overrides */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   body {
 	padding-left: $mobile-content-padding;
 	padding-right: $mobile-content-padding;
@@ -7,10 +7,14 @@
   
   nav  {
     padding: $small-padding-percent;
- }
+  }
+
+  icon[name="break"]:before {
+	font-size: 16px;
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   nav {
 	padding-bottom: 0px;
   

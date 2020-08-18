@@ -1,5 +1,3 @@
-document.getElementById("hamburger").addEventListener("click", hamburgerClicked);
-
 function hamburgerClicked() {
 	var navLinks = document.getElementById("nav-links");
 	if (navLinks.className === "closed") {
@@ -10,9 +8,8 @@ function hamburgerClicked() {
 	
 	var hamburger = document.getElementById("hamburger");
 	if (hamburger.className.baseVal === "closed") {
-		hamburger.className.baseVal = "open";
+		hamburger.setAttribute("class", "open");
 	} else {
-		hamburger.className.baseVal = "closed";
+		hamburger.setAttribute("class", "closed");
 	}
-	
 }
