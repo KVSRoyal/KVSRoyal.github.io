@@ -10,7 +10,7 @@ title: Home
 
 <div style="display: flex; justify-content:center; flex-wrap: wrap;">
 	<div id="kori-wrapper">
-    	<img id="kori" src="assets/imgs/IMG_0748.jpg" alt="Koriann South">
+    	<img id="kori" src="assets/imgs/IMG_0748.JPG" alt="Koriann South">
     </div>
     <div style="display: flex; align-items:center; text-align: center;">
         <div>
