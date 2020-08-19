@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 21px;
 }
 
-p  {
+p {
   font-family: Baskerville, serif;
   font-size: 18px;
 }
@@ -20,35 +20,36 @@ icon {
 }
 
 icon[name="break"]:before {
-  color: $background;
+  color: $main-color;
   text-align: center;
   display: block;
   width: 100%;
   font-size: 24px;
   font-weight: bold;
-  content: "🙤 · ┈┈┈┈┈┈ · ꕥ · ┈┈┈┈┈┈ · 🙦";
+  margin-top: 20px;
+  margin-bottom: 20px;
+  content: "✿ · ┈┈┈┈┈┈ · ꕥ · ┈┈┈┈┈┈ · ✿";
 }
 
 /* For the navigation bar */
 nav  {
   font-size: 16px;
-  padding-top: $small-padding-percent;
-  padding-bottom: $small-padding-percent;
-  padding-left: $small-padding-percent;
-  padding-right: $small-padding-percent;
+  padding: $small-padding-percent;
   
   h1 {
     display: inline-block;
-    color: white;
+	color: $nav-color;
+	animation: pulse $fade-in-time 1;
   }
   
   a {
-	  display: inline-block;
-	  color: white;
+	display: inline-block;
+	color: $nav-color;
+	animation: pulse $fade-in-time 1;
   }
   
   .active {
-	  text-decoration: underline;
+	text-decoration: underline;
   }
 
   .inactive  {
@@ -56,22 +57,22 @@ nav  {
   }
 
   .nav-item {
-	  display: table-cell;
-	  padding-left: $small-padding-pixel;
-	  padding-right: $small-padding-pixel + 3px;
+	display: table-cell;
+	padding-left: $small-padding-pixel;
+	padding-right: $small-padding-pixel + 3px;
   }
 
   .nav-item:hover  {
-    color: darken($background, 50%);
+    color: $nav-highlight-color;
   }
   
   #nav-links {
-	  float:right;
+	float:right;
   }
   
   /* Gone by default */
   #hamburger  {
-	  display: none;
+	display: none;
   }
 }
 
@@ -80,11 +81,13 @@ nav  {
   background-color: white;
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 10px 10px 10px darken($background, 10%);
+  margin-bottom: 40px;
+  box-shadow: 7px 7px 7px darken($background, 10%);
+  animation: pulse $fade-in-time 1;
 
   h1, h2, h3, h4, h5, h6 {
     display: block;
-    color: $background;
+    color: $header-color;
   }
 
   h5, h6 {
@@ -98,10 +101,6 @@ nav  {
 
   h2 {
     font-size: 26px;
-  }
-
-  h2 {
-    font-size: 24px;
   }
 
   h3 {
@@ -118,5 +117,57 @@ nav  {
 
   h6 {
     font-size: 18px;
+  }
+  
+  a.link-button {
+	display: inline-block;
+	width: 100px;
+	background-color: $main-color;
+	font-family: Baskerville, serif;
+	font-size: 22px;
+	color: white;
+	
+	// Padding
+    padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+	// Border
+	border-radius: 20px;
+    box-shadow: 5px 7px 7px darken(white, 10%);
+	text-align: center;
+	text-decoration: none;
+	
+	&:hover {
+	  color: $nav-highlight-color;
+	  transform: translatey(-5px);
+	  box-shadow: 5px 13px 7px darken(white, 10%);
+	  transition: 0.25s ease-in;
+	}
+	
+	transition: 0.25s ease-in-out;
+  }
+  
+  img {
+	border-radius: 20px;
+    object-fit: cover;
+    animation: pulse 4s 1;
+	margin-left: 20px;
+	margin-right: 20px;
+	box-shadow: 5px 7px 7px darken(white, 20%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+	opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

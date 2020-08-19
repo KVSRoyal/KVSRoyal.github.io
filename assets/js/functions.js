@@ -13,3 +13,19 @@ function hamburgerClicked() {
 		hamburger.setAttribute("class", "closed");
 	}
 }
+
+function anywhereClicked() {
+	var target = event.target;
+	var hamburger = document.getElementById("hamburger");
+	if (target === hamburger) {
+		return;
+	}
+	
+	// If the hamburger is showing and the nav links are open, close it
+	var width = window.innerWidth;
+	var navLinks = document.getElementById("nav-links");
+	if (width < 1000 && navLinks.className === "open") {
+		hamburger.setAttribute("class", "closed");
+		navLinks.className = "closed";
+	}
+}

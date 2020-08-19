@@ -1,11 +1,16 @@
 // colors
 $blue: #1FB0FF !default;
+$lavender: #B5D0FF !default;
 $teal: #47c7b5 !default;
 $cream: #ebdbba !default;
 $salmon: #fe9ba2 !default;
 $hot-pink: #fb5578 !default;
 
-$background: $salmon;
+$main-color: $salmon;
+$background: lighten($main-color, 15%);
+$nav-color: darken($main-color, 5%);
+$nav-highlight-color: darken($main-color, 50%);
+$header-color: $main-color;
 
 // padding
 $laptop-content-padding: 20%;
@@ -15,3 +20,6 @@ $small-padding-pixel: 20px;
 
 // sizes
 $nav-item-width: 20px;
+
+// times
+$fade-in-time: 1s;

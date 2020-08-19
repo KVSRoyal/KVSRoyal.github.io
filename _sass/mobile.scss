@@ -4,23 +4,20 @@
 	padding-left: $mobile-content-padding;
 	padding-right: $mobile-content-padding;
   }
-  
-  nav  {
-    padding: $small-padding-percent;
-  }
 
   icon[name="break"]:before {
 	font-size: 16px;
   }
-}
-
-@media screen and (max-width: 1000px) {
+  
   nav {
+	padding-left: $small-padding-percent;
+	padding-right: $small-padding-percent;
+	padding-top: $small-padding-percent;
 	padding-bottom: 0px;
   
     .nav-item {
 	  display: block;
-      color: $background;
+      color: $nav-color;
 	  text-align: center;
 	}
   
@@ -39,7 +36,10 @@
 	  border-width: 2px;
 	  border-color: darken($background, 10%);
 	  border-radius: 10px;
-	  box-shadow: 10px 10px 10px darken($background, 10%);
+	  box-shadow: 5px 5px 5px darken($background, 10%);
+		
+	  opacity: 1;
+	  transition: opacity 0.5s ease, visibility 0.5s ease;
 	}
 	
 	#hamburger {
@@ -51,17 +51,29 @@
 	  stroke-width: 2px;
       background-size: cover; 
 	  background-position: center center;
-	  padding-top: $small-padding-pixel;
+	  padding-top: $small-padding-pixel + 5px;
+	  
+	  animation: pulse $fade-in-time 1;
+	  transition: fill 0.25s ease, stroke 0.25s ease;
 	
 	  &.closed {
-	    fill: white;
-	    stroke: white;
+	    fill: $nav-color;
+	    stroke: $nav-color;
 	  }
 	  
 	  &.open {
-	    fill: darken($background, 50%);
-	    stroke: darken($background, 50%);
+	    fill: $nav-highlight-color;
+	    stroke: $nav-highlight-color;
 	  }
 	}
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .main {
+	  a.link-button {
+	    margin-left: 6px;
+	    margin-right: 6px;
+      }
   }
 }

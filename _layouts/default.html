@@ -9,8 +9,9 @@
 	<link rel="icon" type="image/png" href="/assets/imgs/favicon.png">
   </head>
   <body>
+	<!-- Thank you for your interest in my website and amateur design skills! -->
 	{% include navigation.html %}
-	<div class="main">
+	<div class="main" onclick="anywhereClicked()">
 		{{ page.content | markdownify }}
 	</div>	
   </body>
