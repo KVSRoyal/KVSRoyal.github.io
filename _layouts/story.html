@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{{ "## " | append: page.title  | markdownify}}
+
+{% capture date_written %}
+###### Written: {{ page.date | date: "%B %d, %Y" }}.
+{% endcapture %}
+{{ date_written | markdownify }}
+
+{% capture notes %}
+###### Notes: {{ page.notes }}
+{% endcapture %}
+{{ notes | markdownify }}
+
+{{ content }}
