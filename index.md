@@ -8,6 +8,7 @@ title: Home
     }
 </style>
 
+<!--
 <div style="display: flex; justify-content:center; flex-wrap: wrap;">
 	<div id="kori-wrapper">
     	<img id="kori" src="assets/imgs/IMG_0748.JPG" alt="Koriann South">
@@ -15,20 +16,41 @@ title: Home
     <div style="display: flex; align-items:center; text-align: center;">
         <div>
             <h1>Hi, I'm Kori!</h1>
-            <h6>I'm a 4th Year Computer Science Student!</h6>
-            <h6>...and a writer when I'm bored</h6>
         </div>
     </div>
 </div>
-<icon name="break"></icon>
+-->
 
-# About
 
-I'm a Computer Science major with an emphasis in Entertainment Arts and Engineering at the University of Utah. I grew up in rural Jamaica, and moved to Utah for college. I am passionate about Computing Education Research, Data Science, and their overlap!
+<div style="align-items:center; text-align: center;">
+	<img id="kori" src="assets/imgs/IMG_0748.JPG" alt="Koriann South">
+</div>
+<div style="align-items:center; text-align: center;">
+	<div>
+		<h1>Hi, I'm Kori!</h1>
+	</div>
+</div>
 
-I am currently writing a book with my mom, Janette Kaloo, about her experience with Stage III Breast Cancer. We hope to have it done by the end of the year!
+<table style="margin-left: auto; margin-right: auto;">
+  <tr>
+    <td>💻</td>
+    <td>I'm a Computer Scientist.</td>
+  </tr>
+  <tr>
+    <td>🎓</td>
+    <td>I graduated from the University of Utah in Spring 2022.</td>
+  </tr>
+  <tr>
+    <td>🌴</td>
+    <td>I grew up in rural Jamaica before moving to Utah for college.</td>
+  </tr>
+  <tr>
+    <td>💖</td>
+    <td>I am passionate about Computing Education Research, Data Science, and their overlap!</td>
+  </tr>
+</table>
+
 
 <div style="display: flex; justify-content:center; flex-wrap: wrap;">
-	<a href="assets/docs/resume.pdf" target="_blank" class="link-button">Resume</a>
-	<a href="https://www.linkedin.com/in/koriann-south-120603152" target="_blank" class="link-button">LinkedIn</a>
+	<a href="https://www.linkedin.com/in/koriann-south-120603152" target="_blank" class="link-button">📄 LinkedIn</a>
 </div>
