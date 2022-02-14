@@ -26,9 +26,10 @@ title: Home
 	<img id="kori" src="assets/imgs/IMG_0748.JPG" alt="Koriann South">
 </div>
 <div style="align-items:center; text-align: center;">
-	<div>
-		<h1>Hi, I'm Kori!</h1>
-	</div>
+		<h1 style="margin-bottom:10px">Hi, I'm Kori!</h1>
+		<div style="display: flex; justify-content:center; flex-wrap: wrap;margin-bottom:10px">
+			<a href="https://www.linkedin.com/in/koriann-south-120603152" target="_blank" class="link-button">📄 LinkedIn</a>
+		</div>
 </div>
 
 <table style="margin-left: auto; margin-right: auto;">
@@ -49,8 +50,3 @@ title: Home
     <td>I am passionate about Computing Education Research, Data Science, and their overlap!</td>
   </tr>
 </table>
-
-
-<div style="display: flex; justify-content:center; flex-wrap: wrap;">
-	<a href="https://www.linkedin.com/in/koriann-south-120603152" target="_blank" class="link-button">📄 LinkedIn</a>
-</div>
