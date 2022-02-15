@@ -5,8 +5,9 @@ $teal: #47c7b5 !default;
 $cream: #ebdbba !default;
 $salmon: #fe9ba2 !default;
 $hot-pink: #fb5578 !default;
+$snot-green: #74d420 !default;
 
-$main-color: $salmon;
+$main-color: $snot-green;
 $background: lighten($main-color, 15%);
 $nav-color: darken($main-color, 5%);
 $nav-highlight-color: darken($main-color, 50%);
