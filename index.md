@@ -28,7 +28,9 @@ I'm a Computer Science major with an emphasis in Entertainment Arts and Engineer
 
 I am currently writing a book with my mom, Janette Kaloo, about her experience with Stage III Breast Cancer. We hope to have it done by the end of the year!
 
+Let's go Janette!
+
 <div style="display: flex; justify-content:center; flex-wrap: wrap;">
 	<a href="assets/docs/resume.pdf" target="_blank" class="link-button">Resume</a>
-	<a href="https://www.linkedin.com/in/koriann-south-120603152" target="_blank" class="link-button">LinkedIn</a>
+	<a href="http://frogfind.com/" target="_blank" class="link-button">I'm feeling lucky!</a>
 </div>
